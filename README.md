@@ -1,3 +1,3 @@
 # Volca
 
-Documentation available at https://volca.io/docs/
+Documentation available at https://volca.io/open-source/
