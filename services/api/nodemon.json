@@ -1,0 +1,4 @@
+{
+  "watch": "dist/server.js",
+  "exec": "node -r dotenv/config ./dist/server.js dotenv_config_path=../../.env"
+}
