@@ -1,0 +1,15 @@
+extends:
+  - '../../.eslintrc.yml'
+
+env:
+  browser: false
+  es2021: true
+  jest: true
+plugins:
+  - jest
+rules:
+  no-useless-constructor: off
+  '@typescript-eslint/no-useless-constructor': ['error']
+ignorePatterns:
+  - webpack.config.js
+  - scripts

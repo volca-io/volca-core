@@ -1,0 +1,19 @@
+version: '3.4'
+name: 'volca-api'
+services:
+  database:
+    container_name: volca-api-database
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: volca
+    restart: always
+    image: postgres:15.3
+    volumes:
+      - database:/var/lib/postgresql/data:Z
+    ports:
+      - '5432:5432'
+    profiles:
+      - dev
+volumes:
+  database:
